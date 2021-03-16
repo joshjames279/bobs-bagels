@@ -1,22 +1,22 @@
 class memberOfPublic {
 
     constructor(string){
-        this.string = string;
-        this.array = [];
+        this.item = string;
+        this.basket = [];
     }
     
     add() {
-       this.array.push(this.string);
-       return this.array;
+       this.basket.push(this.item);
+       return this.basket;
     }
 
     remove() {
-        for(let i = 0; i < this.array.length; i++){ 
-            if ( this.array[i] === this.string) { 
-               this.array.splice(i, 1); 
+        for(let i = 0; i < this.basket.length; i++){ 
+            if ( this.basket[i] === this.item) { 
+               this.basket.splice(i, 1); 
             }
         }
-        return this.array;
+        return this.basket;
     }
 }
 
